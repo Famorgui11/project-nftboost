@@ -16,8 +16,12 @@ module.exports = {
 			},
 		},
 		extend: {
+			height: {
+				cardNftHeight: "14.75rem",
+			},
 			maxWidth: {
 				grid: "77.5rem",
+				cardNftWidth: "17.4rem",
 			},
 			fontFamily: {
 				inter: ["var(--font-inter)"],
@@ -26,6 +30,8 @@ module.exports = {
 			colors: {
 				"blue-primary": "#1D4FFE",
 				"green-primary": "#4BCE97",
+				"gray-b-card": "#131317",
+				"gray-a-card": "#05030A",
 			},
 			keyframes: {
 				"accordion-down": {

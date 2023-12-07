@@ -22,6 +22,9 @@ module.exports = {
 			maxWidth: {
 				grid: "77.5rem",
 				cardNftWidth: "17.4rem",
+				cardCollectorWidth: "37rem",
+				logoMobileWidth: "10rem",
+				navHeaderWidth: "48.3rem",
 			},
 			fontFamily: {
 				inter: ["var(--font-inter)"],
@@ -47,6 +50,11 @@ module.exports = {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
 			},
+		},
+		screens: {
+			"@tablet": "640px",
+			"@laptop": "1024px",
+			"@desktop": "1280px",
 		},
 	},
 	plugins: [require("tailwindcss-animate")],

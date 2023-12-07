@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -24,8 +25,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="pt-BR" className="text-white">
-			<body className={`${inter.variable} ${poppins.variable}`}>{children}</body>
+		<html lang="pt-BR">
+			<body className={`${inter.variable} ${poppins.variable}`}>
+				<Header />
+				{children}
+			</body>
 		</html>
 	);
 }

@@ -1,10 +1,9 @@
-import CardCollectors from "@/components/cardCollectors";
 import Container from "@/components/container";
 
 const Home = () => {
 	return (
 		<Container>
-			<CardCollectors />
+			<h1>NFT Boost</h1>
 		</Container>
 	);
 };

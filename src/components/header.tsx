@@ -10,7 +10,7 @@ const itensNav = ["Download", "NFTs", "Rank", "FAQ"];
 
 const Header = () => {
 	return (
-		<header className="py-6 @laptop:py-5">
+		<header className="absolute top-0 left-0 w-full py-6 @laptop:py-5">
 			<Container className="flex items-center justify-between">
 				<Image src={Logo} alt={"Logo NFTBoost"} className="w-full max-w-logoMobileWidth" />
 				<div className="hidden @laptop:flex flex-1 max-w-navHeaderWidth items-center justify-between">

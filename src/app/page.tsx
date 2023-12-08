@@ -1,10 +1,10 @@
-import Container from "@/components/container";
+import SectionHero from "@/components/section-hero";
 
 const Home = () => {
 	return (
-		<Container>
-			<h1>NFT Boost</h1>
-		</Container>
+		<>
+			<SectionHero />
+		</>
 	);
 };
 

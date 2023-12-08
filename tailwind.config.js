@@ -16,8 +16,16 @@ module.exports = {
 			},
 		},
 		extend: {
+			backgroundImage: {
+				sHeroBg: "url('../assets/bg-hero.svg')",
+			},
+			width: {
+				areaCardsMobileWidth: "43.75rem",
+			},
 			height: {
 				cardNftHeight: "14.75rem",
+				areaCardsMobileHeight: "15.3rem",
+				areaCardsDesktopHeight: "26.6rem",
 			},
 			maxWidth: {
 				grid: "77.5rem",
@@ -25,6 +33,8 @@ module.exports = {
 				cardCollectorWidth: "37rem",
 				logoMobileWidth: "10rem",
 				navHeaderWidth: "48.3rem",
+				leftContFooterWidth: "20.25rem",
+				textSHeroWidth: "41.1rem",
 			},
 			fontFamily: {
 				inter: ["var(--font-inter)"],

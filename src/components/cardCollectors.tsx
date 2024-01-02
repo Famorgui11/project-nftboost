@@ -1,4 +1,5 @@
 interface ICardColectors {
+	position: number;
 	image: StaticImageData | string;
 	name: string;
 	value_crypto: string;
@@ -10,11 +11,11 @@ import Image, { StaticImageData } from "next/image";
 import IconVerify from "@/assets/verify.svg";
 import IconETH from "@/assets/icon-eth.svg";
 
-const CardCollectors = ({ image, name, value_crypto, percent }: ICardColectors) => {
+const CardCollectors = ({ position, image, name, value_crypto, percent }: ICardColectors) => {
 	return (
 		<div className="bg-white bg-opacity-[0.01] py-4 px-6 flex items-center justify-between rounded-full border border-white border-opacity-5 w-full max-w-cardCollectorWidth">
-			<div className="flex items-center gap-6">
-				<strong className="font-semibold">1</strong>
+			<div className="flex items-center gap-4 @laptop:gap-6">
+				<strong className="font-semibold">{position}</strong>
 				<div className="flex items-center gap-4">
 					<div className="relative w-[2.625rem] h-[2.625rem]">
 						<div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center border-2 border-white border-opacity-5">
@@ -24,7 +25,7 @@ const CardCollectors = ({ image, name, value_crypto, percent }: ICardColectors) 
 					</div>
 					<div className="space-y-1">
 						<h4>{name}</h4>
-						<p className="flex items-center gap-1 text-sm text-white text-opacity-70">
+						<p className="flex flex-col @laptop:flex-row items-start @laptop:items-center gap-1 text-sm text-white text-opacity-70">
 							Preço mínimo
 							<span className="flex items-center gap-1 text-sm font-semibold">
 								<Image src={IconETH} alt={"Icon Ether"} />
@@ -35,7 +36,7 @@ const CardCollectors = ({ image, name, value_crypto, percent }: ICardColectors) 
 				</div>
 			</div>
 			<div className="space-y-1 text-right">
-				<strong className="text-green-primary text-sm/4 font-bold">{percent}</strong>
+				<strong className="text-green-primary text-sm/4 font-bold">+{percent}%</strong>
 				<span className="flex items-center gap-1 text-sm font-semibold">
 					<Image src={IconETH} alt={"Icon Ether"} />
 					{value_crypto} BTC

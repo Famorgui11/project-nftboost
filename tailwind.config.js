@@ -45,6 +45,7 @@ module.exports = {
 				"green-primary": "#4BCE97",
 				"gray-b-card": "#131317",
 				"gray-a-card": "#05030A",
+				"gray-h-btn-slide": "#07050F",
 			},
 			keyframes: {
 				"accordion-down": {
